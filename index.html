@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Awareness Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Phishing Awareness Simulation</h1>
+    </header>
+    <main>
+        <section id="email">
+            <h2>Phishing Email Simulation</h2>
+            <div id="email-content">
+                <p><strong>From:</strong> support@yourbank.com</p>
+                <p><strong>Subject:</strong> Urgent Security Update Required</p>
+                <p>Dear User,</p>
+                <p>We have detected unusual activity on your account. Please <a href="#" id="phishing-link">click here</a> to verify your account and secure your information immediately.</p>
+                <p>Thank you,<br>Your Bank Security Team</p>
+            </div>
+            <button onclick="checkResponse(true)">Click Link</button>
+            <button onclick="checkResponse(false)">Ignore</button>
+        </section>
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <p id="feedback-message"></p>
+        </section>
+        <section id="tips">
+            <h2>Phishing Detection Tips</h2>
+            <ul>
+                <li>Be cautious of emails from unknown senders.</li>
+                <li>Check for suspicious links or attachments.</li>
+                <li>Verify the legitimacy of requests for sensitive information.</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
